@@ -1,0 +1,11 @@
+ranking = {}
+
+controle = int(input("Quantas livros serão adicionados?\n"))
+
+for i in range (controle):
+    nome = input("Digite o título do livro: ")
+    posicao = input("Insira a posição do livro: ")
+    ranking[int(posicao)] = nome
+
+for posicao, nome in sorted(ranking.items()):
+    print(f"{posicao} - {nome}")
