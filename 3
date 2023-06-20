@@ -1,0 +1,12 @@
+def calcular_desconto(cliente):
+    if cliente > 21:
+        desconto = 0.15
+    else: 
+        desconto = 0.10
+    
+    return desconto
+
+idade_cliente = int(input("Insira a idade do cliente: "))
+desconto = calcular_desconto(idade_cliente)
+
+print(f"\nO desconto será de: {desconto * 100 }%")
