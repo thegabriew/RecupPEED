@@ -1,0 +1,26 @@
+#O programa apresenta um erro de loop infinito que não consegui consertar
+
+import random
+ 
+if __name__ == '__main__':
+ 
+    inicio = 1   
+    fim = 50    
+ 
+    n = 1     
+ 
+    resposta = random.randint(inicio,fim)
+    
+
+palpite = int(input("Insira um número entre 1 e 50: "))
+
+while palpite != resposta:
+    if palpite > resposta:
+        print("Palpite muito alto, tente novamente")
+    elif palpite > resposta:
+        print("Palpite muito baixo, tente novamente")
+    else:
+        print("Resposta certa.")
+        break
+
+        palpite = int(input("Insira um número entre 1 e 50: "))
